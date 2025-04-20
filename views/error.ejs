@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Error</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .error {
+        color: #dc3545;
+        background: #f8d7da;
+        padding: 15px;
+        border-radius: 4px;
+      }
+      a {
+        color: #4caf50;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error">
+      <h1>Error Occurred!</h1>
+      <p><%= errorMessage %></p>
+    </div>
+    <p style="margin-top: 20px">
+      <a href="<%= redirectUrl %>">Click here to try again</a>
+    </p>
+  </body>
+</html>
